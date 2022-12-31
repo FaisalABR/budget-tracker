@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1c3879;
+  --secondary-color: #607eaa;
+  --title-color: #eae3d2;
+  --text-color: #f9f5eb;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--secondary-color);
+}
+
+header {
+  max-width: 800px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  border-radius: 1.5rem;
+}
+
+header h1 {
+  color: var(--title-color);
+  margin-bottom: 0.75rem;
+}
+
+header h2 {
+  color: var(--title-color);
+  font-weight: 400;
+}
+
+header p {
+  display: block;
+  width: fit-content;
+  padding: 0.5rem;
+  background-color: var(--title-color);
+  border-radius: 1.5rem;
+  margin: 1.125rem;
+}
+
+#form .amount {
+  appearance: none;
+  border: none;
+  outline: none;
+  width: 200px;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 0.75rems;
+}
+
+#form input[name="type-budget"] {
+  border: none;
+  outline: none;
+  margin: 1rem;
+}
+
+#form input[name="type-budget"] {
+  background-color: #607eaa;
+  cursor: pointer;
+}
+
+label[for="income"] {
+  color: #0bda51;
+}
+label[for="invesment"] {
+  color: #ffaa33;
+}
+label[for="expense"] {
+  color: #eb5353;
+}
+
+#form #dateTime {
+  border: none;
+  outline: none;
+  padding: 0.25rem;
+  border-radius: 1rem;
+  background-color: var(--text-color);
+  margin-right: 1rem;
+}
+
+#form input[type="submit"] {
+  border: none;
+  outline: none;
+  font-family: "Lato", sans-serif;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #157347;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#form input[type="submit"]:hover {
+  box-shadow: 1px 1px #29c079;
+  background-color: #29c079;
+}
+
+#form input[type="submit"]:active {
+  color: var(--text-color);
+}
+
+#tracker {
+  max-width: 800px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1.5rem;
+}
+
+#tracker h2 {
+  color: var(--text-color);
+}
+
+.tracker-item {
+  width: 90%;
+  display: flex;
+  margin: 1rem auto;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--text-color);
+  align-items: center;
+}
+
+.income-status {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button[class="delete"] {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  background-color: #dc3545;
+  color: var(--text-color);
+  padding: 0.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+button[class="delete"]:hover {
+  background-color: #ff3e51;
+}

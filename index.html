@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="budget.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Budget Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>Budget Tracker</h1>
+
+      <h2>My balance</h2>
+      <p>Rp.<span id="balance">0</span></p>
+      <form id="form">
+        <input type="number" class="amount" placeholder="Input your amount!" />
+        <br />
+        <input type="radio" name="type-budget" id="income" value="income" />
+        <label for="income">Income</label>
+
+        <input
+          type="radio"
+          name="type-budget"
+          id="invesment"
+          value="invesment"
+        />
+        <label for="invesment">Invesment</label>
+
+        <input type="radio" name="type-budget" id="expense" value="expense" />
+        <label for="expense">Expense</label>
+        <br />
+        <input type="date" id="date-time" />
+        <input type="submit" value="Add Transaction" id="submit" />
+      </form>
+    </header>
+
+    <main id="tracker">
+      <h2>My Budget History</h2>
+
+      <section class="tracker-list">
+        <!-- <div class="tracker-item">
+          <div class="income-value">Rp.100000</div>
+          <div class="income-status">
+            <p>12/12/2022</p>
+            <p>Invesment</p>
+            <button class="delete">delete</button>
+          </div>
+        </div> -->
+      </section>
+    </main>
+
+    <script src="budget.js"></script>
+  </body>
+</html>
